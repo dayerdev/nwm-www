@@ -1,0 +1,221 @@
+/* --- Material Theme Variables --- */
+:root {
+    --md-primary: #009485; /* Meshtastic Green/Teal tone */
+    --md-accent: #00bfa5;
+    --md-text: #2e3c43;
+    --md-text-light: #737373;
+    --md-bg: #ffffff;
+    --md-code-bg: #f5f5f5;
+    --md-sidebar-bg: #f0f0f0;
+    --md-border: #e0e0e0;
+    --font-stack: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+
+/* --- Global Reset --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--md-bg);
+    color: var(--md-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Header --- */
+.md-header {
+    background-color: var(--md-primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.header-nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.header-nav a:hover { color: white; }
+
+/* --- Layout Container --- */
+.md-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+}
+
+/* --- Sidebar --- */
+.md-sidebar {
+    width: 250px;
+    padding: 2rem 1rem;
+    border-right: 1px solid var(--md-border);
+    background: #fff;
+}
+
+.md-nav ul { list-style: none; margin-bottom: 2rem; }
+.nav-title {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--md-text-light);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding-left: 10px;
+}
+
+.md-nav li a {
+    display: block;
+    padding: 8px 10px;
+    color: var(--md-text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.md-nav li a:hover {
+    background-color: var(--md-sidebar-bg);
+    color: var(--md-primary);
+}
+
+.md-nav li a.active {
+    background-color: #e0f2f1; /* Light teal bg */
+    color: var(--md-primary);
+    font-weight: 500;
+}
+
+/* --- Main Content --- */
+.md-content {
+    flex: 1;
+    padding: 2rem 3rem;
+    max-width: 800px; /* Readability limit */
+}
+
+/* Typography */
+h1 { font-size: 2.2rem; font-weight: 300; margin-bottom: 0.5rem; color: #000; }
+.lead { font-size: 1.2rem; color: var(--md-text-light); margin-bottom: 2rem; }
+h2 { font-size: 1.6rem; font-weight: 400; margin-top: 2.5rem; margin-bottom: 1rem; color: #000; }
+p { margin-bottom: 1rem; }
+hr { border: 0; border-top: 1px solid var(--md-border); margin: 2rem 0; }
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid var(--md-border); }
+th { background-color: var(--md-sidebar-bg); font-weight: 700; }
+
+/* --- Admonition (Note/Warning/Info Boxes) --- */
+
+/* 1. The Box Container (Shared Shape) */
+.admonition {
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+    border-left: 4px solid; /* Color gets set below */
+}
+
+/* 2. The Title Text (Shared Font Style) */
+.admonition-title {
+    font-weight: 700;        /* Make ALL titles bold */
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase; /* Make ALL titles uppercase */
+    letter-spacing: 0.5px;
+}
+
+/* 3. The Colors (Blue - Note) */
+.admonition.note {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+}
+.admonition.note .admonition-title {
+    color: #0d47a1;
+}
+
+/* 4. The Colors (Red - Warning) */
+.admonition.warning {
+    background-color: #ffebee;
+    border-color: #f44336;
+}
+.admonition.warning .admonition-title {
+    color: #b71c1c;
+}
+
+/* 5. The Colors (Green - Info) */
+.admonition.info {
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+}
+.admonition.info .admonition-title {
+    color: #2e7d32;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--md-primary);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+.btn-primary:hover { background-color: var(--md-accent); }
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+    .md-container { flex-direction: column; }
+    .md-sidebar { width: 100%; border-right: none; border-bottom: 1px solid var(--md-border); padding: 1rem; }
+    .md-content { padding: 1.5rem; }
+}
+
+
+
+
+.md-content ol, 
+.md-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;  
+    line-height: 1.7;    
+}
+
+.md-content li {
+    margin-bottom: 0.5rem;
+    color: var(--md-text); 
+}
+
+
+.md-content li::marker {
+    color: var(--md-primary);
+    font-weight: 700;      
+}
