@@ -1,0 +1,48 @@
+site_name: New Welsh Mesh
+site_url: https://welshmesh.pysgod.xyz/
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: nwm-white.png
+  favicon: nwmlogo.png
+  palette: 
+    - scheme: default
+      primary: custom 
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+extra_css:
+  - stylesheets/style.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/4VhKqbH39W
+
+nav:
+  - Home: index.md
+  - Documentation:
+    - Getting Started: docs/getting-started.md
+    - Node Settings: docs/node-settings.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - attr_list  # This is needed to make your { width="35%" } and buttons work!
+
+use_directory_urls: true

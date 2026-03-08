@@ -1,0 +1,30 @@
+# Welcome to the New Welsh Mesh
+
+![The NWM Logo](nwmlogo.png){ width="35%" }
+
+Building a resilient, off-grid communications network across Wales using Meshtastic LoRa technology.
+
+---
+
+!!! info "Information"
+    This website is very beta. Many pages are broken or they just don't exist. Please be patient, I am only one person. Thanks!
+
+## What is this project?
+The **New Welsh Mesh** is a community-driven initiative to expand Meshtastic coverage throughout the valleys, coastlines, and towns of Wales. By deploying low-power, long-range radio nodes, we are building a decentralized network independent of cellular towers.
+
+!!! note "Note"
+    This project is currently in the **Early Alpha** phase. We are looking for node operators in the Tonyrefail areas.
+
+## Recommended Hardware
+To join the mesh, we recommend the following starter devices:
+
+| Device | Use Case | Approx Price |
+| :--- | :--- | :--- |
+| **Heltec V3** | Best starter node (USB powered) | £20 |
+| **RAK WisBlock** | Best for Solar/Outdoor nodes | £40 |
+| **T-Beam** | Great for GPS tracking | £35 |
+
+## Get Involved
+Ready to join? Flash your device with the latest firmware and set your region to **EU868**.
+
+[View Setup Guide](getting-started.md){ .md-button .md-button--primary }
