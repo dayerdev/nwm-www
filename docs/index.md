@@ -27,4 +27,9 @@ To join the mesh, we recommend the following starter devices:
 ## Get Involved
 Ready to join? Flash your device with the latest firmware and set your region to **EU868**.
 
-[View Setup Guide](getting-started.md){ .md-button .md-button--primary }
+[View Setup Guide](docs/getting-started.md){ .md-button .md-button--primary }
+
+---
+
+!!! warning "Disclaimer"
+    We are by far not the first mesh in Wales, using other software like MeshCore you will most likely get more people in the UK, however I pefer meshtastic and from what I have found, We are the first Meshtastic Mesh in Wales
