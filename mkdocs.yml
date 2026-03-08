@@ -5,7 +5,7 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   logo: nwm-white.png
-  favicon: nwmlogo.png
+  favicon: nwm-white.png
   palette: 
     - scheme: default
       primary: custom 
