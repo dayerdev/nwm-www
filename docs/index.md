@@ -32,4 +32,4 @@ Ready to join? Flash your device with the latest firmware and set your region to
 ---
 
 !!! warning "Disclaimer"
-    We are by far not the first mesh in Wales, using other software like MeshCore you will most likely get more people in the UK, however I pefer meshtastic and from what I have found, We are the first Meshtastic Mesh in Wales
+    We are by far not the first mesh in Wales, using other software like MeshCore you will most likely get more people in the UK, however I pefer meshtastic and from what I have found, We are the first Meshtastic Mesh in Wales, I pefer Meshtastic because of the ease of use, community intergrations and UI on devices with screens like the Small OLED on the HeltecV3 Boards or the big touchscreens on the Lily-Go T-Deck.
