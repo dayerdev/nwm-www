@@ -46,8 +46,9 @@ extra:
 nav:
   - Home: index.md
   - Documentation:
-    - Getting Started: docs/getting-started.md
-      - Node Settings: docs/node-settings.md
+    - Getting Started: 
+        - Introduction: docs/getting-started.md
+        - Node Settings: docs/node-settings.md
 
 markdown_extensions:
   - admonition
