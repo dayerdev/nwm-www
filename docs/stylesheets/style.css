@@ -19,7 +19,7 @@
 
 /* Hide the default "Made with Material" footer info */
 .md-copyright {
-    display: none;
+    display: block; /* It was set to none, so ignore like the past 812381239681237 pushes to mkdocs.yml because I didnt realize this was here
 }
 
 /* --- 2. YOUR ORIGINAL DESIGN VARIABLES --- */
