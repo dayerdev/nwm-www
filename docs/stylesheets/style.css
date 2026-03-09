@@ -178,3 +178,27 @@ hr {
 [data-md-color-scheme="slate"] .lead {
     color: #b0bec5; /* Light grey for the lead text */
 }
+
+/* --- DARK MODE SIDEBAR & TOC FIXES --- */
+[data-md-color-scheme="slate"] {
+    /* Fixes the Left Navigation Links */
+    --md-nav-link-color: #ffffff;
+    --md-nav-link-color--hover: #00bfa5;
+
+    /* Fixes the Right Table of Contents Links */
+    --md-toc-link-color: #ffffff;
+    --md-toc-link-color--hover: #00bfa5;
+}
+
+/* Specific override for the Navigation labels and links */
+[data-md-color-scheme="slate"] .md-nav__link,
+[data-md-color-scheme="slate"] .md-nav__title,
+[data-md-color-scheme="slate"] .md-sidebar {
+    color: #ffffff !important;
+}
+
+/* Ensure the active/hovered link in the TOC stands out */
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+    color: var(--md-accent-fg-color) !important;
+}
