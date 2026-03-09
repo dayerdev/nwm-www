@@ -154,3 +154,27 @@ hr {
     background-color: var(--md-accent) !important;
     border-color: var(--md-accent) !important;
 }
+
+/* --- DARK MODE TEXT COLOR FIXES --- */
+[data-md-color-scheme="slate"] {
+    /* Main body text color */
+    --md-typeset-color: #ffffff;
+    
+    /* Ensure all paragraphs and lists in the main content are white */
+    --md-text-fg-color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset {
+    color: #ffffff;
+}
+
+/* Specific fix for Admonition (Info/Note/Warning) text in dark mode */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset .admonition p {
+    color: #ffffff !important;
+}
+
+/* Ensure the 'lead' text on the homepage is also visible */
+[data-md-color-scheme="slate"] .lead {
+    color: #b0bec5; /* Light grey for the lead text */
+}
