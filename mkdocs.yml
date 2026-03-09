@@ -28,7 +28,7 @@ theme:
 extra_css:
   - stylesheets/style.css
 
-copyright: Copyright &copy; 2026 [Pysgod Media]{pysgod.xyz/welsh/copyright}
+copyright: Copyright &copy; 2026 <a href="https://pysgod.xyz/mesh/copy">Pysgod Media</a>
 
 extra:
   social:
