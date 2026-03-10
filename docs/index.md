@@ -20,7 +20,7 @@ To join the mesh, we recommend the following starter devices:
 
 | Device | Use Case | Approx Price |
 | :--- | :--- | :--- |
-| **Heltec V3** | Best starter node (USB powered) | £20 |
+| **Heltec V3** | Best starter node (USB or battery powered) | £20 |
 | **RAK WisBlock** | Best for Solar/Outdoor nodes | £40 |
 | **T-Beam** | Great for GPS tracking | £35 |
 
