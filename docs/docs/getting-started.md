@@ -11,7 +11,7 @@ To join you will need a small, cheap, **Long Range** radio that will join into t
 
 | Device | Use Case | Approx Price |
 | :--- | :--- | :--- |
-| **Heltec V3** | Best starter node (USB powered) | £20 |
+| **Heltec V3** | Best starter node (USB or Battery powered) | £20 |
 | **RAK WisBlock** | Best for Solar/Outdoor nodes | £40 |
 | **T-Beam** | Great for GPS tracking | £35 |
 
