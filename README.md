@@ -8,5 +8,4 @@ If you wish to contribute or join our project, see the website
 
 ------------------------------------
 
-New Welsh Mesh
-A part of Pysgod Media
+New Welsh Mesh - Pysgod Media
